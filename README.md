@@ -1,4 +1,5 @@
 <br />
+<h3>Demo: https://layannehonorato.github.io/Loja-selfcare/</h3>
 <p align="center">
  
    <img src="design/desktop.png" width="380" height="600">
