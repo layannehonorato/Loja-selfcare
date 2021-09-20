@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+}
+body{
+    margin: 0;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10vh;
+    row-gap: 7vh;
+    padding: 10vh;
+    justify-content: space-between;
+}
+
+.product{
+    .poster{
+        height: 40vh;
+        width: 40vh;
+        text-align: center;
+        img{
+            height: 100%;
+            width: 100%; 
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    h3{
+        font-size: 16px;
+    }
+    span{
+        color:#5CA720;
+        font-size:1.5em;
+        margin-left: 0.5vh;
+    }
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 1rem;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    &:hover{
+        border: 1px solid #dad5d5;
+        padding: 1rem;
+    }
+}
+
+#nav2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vh 0 10vh;
+    align-items: center;
+    border-bottom: 1px solid #dad5d5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10vh 5vh 10vh;
+    align-items: center;
+    .menu1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-weight:bold;
+        }
+        column-gap: 1vh;
+    }
+    .menu2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3vh;
+        .coverIcon{
+            width: 3vh;
+            height: 3vh;
+            cursor: pointer;
+            img{
+                height: 100%;
+                width: 100%; 
+                object-fit: cover;
+                transition: 0.2s;
+                &:hover{
+                    height: 105%;
+                    width: 105%;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color:#F9F9F9;
+    padding: 5vh 10vh 5vh 10vh;
+    .informations{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #dad5d5;
+        justify-content: space-between;
+        padding-bottom: 5vh;
+    }
+    #pages{
+        display:flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                color:#5CA720;
+            }
+        }
+        #inputs{
+            margin-top: 10vh;
+        }
+    }
+    .informations2{
+        display: flex;
+        flex-direction: row;
+        padding: 5vh 0 2vh 0;
+        justify-content: space-between;
+        #social{
+            display: flex;
+            column-gap: 2vh;
+        }
+    }
+}

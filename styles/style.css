@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 10vh;
+          column-gap: 10vh;
+  row-gap: 7vh;
+  padding: 10vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 1rem;
+  border: 1px solid #ffff;
+  border-radius: 5px;
+}
+
+.product .poster {
+  height: 40vh;
+  width: 40vh;
+  text-align: center;
+}
+
+.product .poster img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 16px;
+}
+
+.product span {
+  color: #5CA720;
+  font-size: 1.5em;
+  margin-left: 0.5vh;
+}
+
+.product:hover {
+  border: 1px solid #dad5d5;
+  padding: 1rem;
+}
+
+#nav2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10vh 0 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dad5d5;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5vh 10vh 5vh 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menu1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1vh;
+          column-gap: 1vh;
+}
+
+nav .menu1 span {
+  font-weight: bold;
+}
+
+nav .menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3vh;
+          column-gap: 3vh;
+}
+
+nav .menu2 .coverIcon {
+  width: 3vh;
+  height: 3vh;
+  cursor: pointer;
+}
+
+nav .menu2 .coverIcon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav .menu2 .coverIcon img:hover {
+  height: 105%;
+  width: 105%;
+}
+
+footer {
+  background-color: #F9F9F9;
+  padding: 5vh 10vh 5vh 10vh;
+}
+
+footer .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #dad5d5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5vh;
+}
+
+footer #pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1vh;
+}
+
+footer #pages a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer #pages a:hover {
+  color: #5CA720;
+}
+
+footer #pages #inputs {
+  margin-top: 10vh;
+}
+
+footer .informations2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5vh 0 2vh 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .informations2 #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2vh;
+          column-gap: 2vh;
+}
+/*# sourceMappingURL=style.css.map */
