@@ -22,10 +22,43 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 820px) {
+  #products {
+    padding: 2vh;
+    -webkit-column-gap: 3vh;
+            column-gap: 3vh;
+    row-gap: 3vh;
+  }
+}
+
+@media (max-width: 460px) {
+  #products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#banner {
+  width: 100%;
+  height: 50vh;
+}
+
+@media (max-width: 820px) {
+  #banner {
+    height: 30vh;
+  }
+}
+
+#banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .product {
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   padding: 1rem;
   border: 1px solid #ffff;
   border-radius: 5px;
@@ -35,6 +68,20 @@ body {
   height: 40vh;
   width: 40vh;
   text-align: center;
+}
+
+@media (max-width: 820px) {
+  .product .poster {
+    height: 30vh;
+    width: 30vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .product .poster {
+    height: 20vh;
+    width: 30vh;
+  }
 }
 
 .product .poster img {
@@ -56,8 +103,9 @@ body {
 }
 
 .product:hover {
-  border: 1px solid #dad5d5;
+  border: 1px solid #5CA720;
   padding: 1rem;
+  background-color: #F9F9F9;
 }
 
 #nav2 {
@@ -74,6 +122,12 @@ body {
   border-bottom: 1px solid #dad5d5;
 }
 
+@media (max-width: 460px) {
+  #nav2 {
+    padding: 0 2vh 0 2vh;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +139,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 460px) {
+  nav {
+    padding: 2vh 3vh 2vh 3vh;
+  }
 }
 
 nav .menu1 {
@@ -125,13 +185,28 @@ nav .menu2 .coverIcon {
   cursor: pointer;
 }
 
+@media (max-width: 820px) {
+  nav .menu2 .coverIcon {
+    width: 2vh;
+    height: 2vh;
+  }
+}
+
+@media (max-width: 460px) {
+  nav .menu2 .coverIcon {
+    width: 2.5vh;
+    height: 2.5vh;
+  }
+}
+
 nav .menu2 .coverIcon img {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  z-index: 111;
 }
 
 nav .menu2 .coverIcon img:hover {
@@ -157,6 +232,9 @@ footer .informations {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 5vh;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  row-gap: 5vh;
 }
 
 footer #pages {
